@@ -1,0 +1,28 @@
+# Default code owners for entire repository
+*                                               @hashgraph/developer-advocates 
+#########################
+#####  Core Files  ######
+#########################
+
+# NOTE: Must be placed last to ensure enforcement over all other rules
+
+# Protection Rules for Github Configuration Files and Actions Workflows
+/.github/                                       @hashgraph/platform-ci @hashgraph/release-engineering-managers
+
+# Codacy Tool Configurations
+/config/                                        @hashgraph/platform-ci @hashgraph/release-engineering-managers @hashgraph/developer-advocates @hashgraph/platform-ci-committers
+.remarkrc                                       @hashgraph/platform-ci @hashgraph/release-engineering-managers @hashgraph/developer-advocates @hashgraph/platform-ci-committers
+
+# Self-protection for root CODEOWNERS files (this file should not exist and should definitely require approval)
+/CODEOWNERS                                     @hashgraph/release-engineering-managers
+
+# Protect the repository root files
+/README.md                                      @hashgraph/platform-ci @hashgraph/release-engineering-managers @hashgraph/platform-ci-committers @hashgraph/developer-advocates
+**/LICENSE                                      @hashgraph/release-engineering-managers
+
+# CodeCov configuration
+**/codecov.yml                                  @hashgraph/platform-ci @hashgraph/release-engineering-managers
+
+# Git Ignore definitions
+**/.gitignore                                   @hashgraph/platform-ci @hashgraph/release-engineering-managers @hashgraph/platform-ci-committers
+**/.gitignore.*                                 @hashgraph/platform-ci @hashgraph/release-engineering-managers @hashgraph/platform-ci-committers
